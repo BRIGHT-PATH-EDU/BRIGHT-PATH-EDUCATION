@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { ToasterService } from './services/toaster.service';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "./app-page/navbar/navbar.component";
+import { SidebarComponent } from "./app-page/sidebar/sidebar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NavbarComponent, NavbarComponent, SidebarComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
